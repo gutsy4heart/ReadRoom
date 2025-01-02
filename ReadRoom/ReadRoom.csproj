@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\authorization.png" />
+    <None Remove="View\background.jpg" />
+    <None Remove="View\backgroundauthoriz.jpg" />
+    <None Remove="View\image.jpg" />
+    <None Remove="View\registration.png" />
+    <None Remove="View\search.png" />
+    <None Remove="View\shopicon.jpg" />
+    <None Remove="View\statistics.png" />
+    <None Remove="View\update.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="DataBase\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\authorization.png" />
+    <Resource Include="View\background.jpg" />
+    <Resource Include="View\backgroundauthoriz.jpg" />
+    <Resource Include="View\image.jpg" />
+    <Resource Include="View\registration.png" />
+    <Resource Include="View\search.png" />
+    <Resource Include="View\shopicon.jpg" />
+    <Resource Include="View\statistics.png" />
+    <Resource Include="View\update.png" />
+  </ItemGroup>
+
+</Project>

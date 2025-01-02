@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\BookStatisticWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PromotionsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ReservationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ResgistrationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SearchBookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ShopWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UpdateBookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BookStatisticWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromotionsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ReservationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ResgistrationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SearchBookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ShopWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UpdateBookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

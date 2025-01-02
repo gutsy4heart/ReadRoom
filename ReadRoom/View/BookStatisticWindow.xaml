@@ -1,0 +1,38 @@
+﻿<Window x:Class="ReadRoom.View.BookStatisticWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadRoom.View"
+        mc:Ignorable="d"
+        Title="Статистика книг" Height="450" Width="800" Background="DarkRed" Icon="/View/statistics.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="10">
+            <Button Content="Новинки" Command="{Binding ShowNewReleasesCommand}" Margin="0,0,0,10" Height="30"/>
+            <Button Content="Самые продаваемые книги" Command="{Binding ShowBestSellingBooksCommand}" Margin="0,0,0,10" Height="30"/>
+            <Button Content="Самые популярные авторы" Command="{Binding ShowPopularAuthorsCommand}" Margin="0,0,0,10" Height="30"/>
+            <Button Content="Самые популярные жанры" Command="{Binding ShowPopularGenresCommand}" Margin="0,0,0,10" Height="30"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" >
+
+            <Button Content="Назад" Command="{Binding BackToShopCommand}" Margin="0,0,0,10" Height="30"/>
+        </StackPanel>
+        <ListView Grid.Column="1" ItemsSource="{Binding BookStatistics}" Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Название книги" DisplayMemberBinding="{Binding Title}" Width="150"/>
+                    <GridViewColumn Header="Имя автора" DisplayMemberBinding="{Binding AuthorName}" Width="100"/>
+                    <GridViewColumn Header="Фамилия автора" DisplayMemberBinding="{Binding AuthorSurname}" Width="100"/>
+                    <GridViewColumn Header="Жанр" DisplayMemberBinding="{Binding Genre}" Width="100"/>
+                    <GridViewColumn Header="Издательство" DisplayMemberBinding="{Binding Publisher}" Width="100"/>
+                    <GridViewColumn Header="Год публикации" DisplayMemberBinding="{Binding PublicationYear}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

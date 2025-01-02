@@ -1,0 +1,42 @@
+﻿<Window x:Class="ReadRoom.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadRoom.ViewModel"
+        mc:Ignorable="d"
+        Title="Authorization" Height="380" Width="400" Icon="/View/authorization.png" >
+    <Window.Background>
+        <ImageBrush ImageSource="/View/backgroundauthoriz.jpg"/>
+    </Window.Background>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+     
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0">
+            <Label FontSize="34" Content="ReadRoom" FontFamily="Edwardian Script ITC" Foreground="White" Background="{x:Null}"/>
+        </StackPanel>
+
+ 
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label FontSize="30" Content="Authorization" FontFamily="Edwardian Script ITC" Foreground="White" Width="137" Background="#FF2B9396"/>
+            <Label Content="Логин" Foreground="White"/>
+            <TextBox Text="{Binding User.Login, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="0,5"/>
+            <Label Content="Пароль" Foreground="White"/>
+            <PasswordBox Width="200" Margin="0,5" PasswordChanged="PasswordBox_PasswordChanged"/>
+            <Button Content="Войти" Width="200" Margin="5" Command="{Binding LoginCommand}"/>
+            <Label Content="Нету аккаунта? Регистрируйтесь" HorizontalAlignment="Center" Foreground="White"/>
+            <Button Content="Регистрация" Width="200" Margin="5" Command="{Binding RegistrationOpenCommand}"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
