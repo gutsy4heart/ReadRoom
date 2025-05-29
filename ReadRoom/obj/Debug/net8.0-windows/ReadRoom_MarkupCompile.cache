@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Gutsy\Desktop\Code\ADO.NET\ReadRoom\ReadRoom\obj\Debug\net8.0-windows\
+C:\Users\murad\Desktop\Projects\ReadRoom\ReadRoom\obj\Debug\net8.0-windows\
 ReadRoom
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Gutsy\Desktop\Code\ADO.NET\ReadRoom\ReadRoom\App.xaml
+C:\Users\murad\Desktop\Projects\ReadRoom\ReadRoom\App.xaml
 81856664047
 
 25-382687391
-205-955580790
+222-572899109
 View\AuthorizationWindow.xaml;View\BookStatisticWindow.xaml;View\PromotionsWindow.xaml;View\ReservationWindow.xaml;View\ResgistrationWindow.xaml;View\SearchBookWindow.xaml;View\ShopWindow.xaml;View\UpdateBookWindow.xaml;
 
 False

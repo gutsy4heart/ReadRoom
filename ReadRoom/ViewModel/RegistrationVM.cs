@@ -15,7 +15,7 @@ namespace ReadRoom.ViewModel
 {
     public class RegistrationVM : ViewModelBase
     {
-        public string ConnectionString { get; set; }
+        public string ConnectionString => ConfigurationManager.ConnectionStrings["LocalAutoCenterDb"].ConnectionString;
 
         public RelayCommand RegistrationCommand { get; }
 
@@ -31,7 +31,7 @@ namespace ReadRoom.ViewModel
 
         public RegistrationVM()
         {
-            ConnectionString = ConfigurationManager.ConnectionStrings["localAutoCenterDb"].ConnectionString;
+            
             RegistrationCommand = new RelayCommand(RegisterUser);
             
             User = new Users();

@@ -1,6 +1,6 @@
 --create database ReadRoom
 
---use ReadRoom
+use ReadRoom
 
 --drop database ReadRoom
 
@@ -104,3 +104,5 @@ Select * from Sales
 Select * from Promotions
 
 select * from Sales
+
+select * from Users

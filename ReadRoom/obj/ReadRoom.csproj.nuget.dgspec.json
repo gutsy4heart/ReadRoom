@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gutsy\\Desktop\\Code\\ADO.NET\\ReadRoom\\ReadRoom\\ReadRoom.csproj": {}
+    "C:\\Users\\murad\\Desktop\\Projects\\ReadRoom\\ReadRoom\\ReadRoom.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gutsy\\Desktop\\Code\\ADO.NET\\ReadRoom\\ReadRoom\\ReadRoom.csproj": {
+    "C:\\Users\\murad\\Desktop\\Projects\\ReadRoom\\ReadRoom\\ReadRoom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gutsy\\Desktop\\Code\\ADO.NET\\ReadRoom\\ReadRoom\\ReadRoom.csproj",
+        "projectUniqueName": "C:\\Users\\murad\\Desktop\\Projects\\ReadRoom\\ReadRoom\\ReadRoom.csproj",
         "projectName": "ReadRoom",
-        "projectPath": "C:\\Users\\Gutsy\\Desktop\\Code\\ADO.NET\\ReadRoom\\ReadRoom\\ReadRoom.csproj",
-        "packagesPath": "C:\\Users\\Gutsy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gutsy\\Desktop\\Code\\ADO.NET\\ReadRoom\\ReadRoom\\obj\\",
+        "projectPath": "C:\\Users\\murad\\Desktop\\Projects\\ReadRoom\\ReadRoom\\ReadRoom.csproj",
+        "packagesPath": "C:\\Users\\murad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\murad\\Desktop\\Projects\\ReadRoom\\ReadRoom\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gutsy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\murad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,6 +50,10 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "MvvmLightLibs": {
               "target": "Package",
               "version": "[5.4.1.1, )"
@@ -82,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
